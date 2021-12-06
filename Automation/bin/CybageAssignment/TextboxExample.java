@@ -17,8 +17,6 @@ public class TextboxExample {
 		driver.manage().window().maximize();
 		
 		driver.get("https://demoqa.com/");
-		
-//		Actions a = new Actions(driver);
 	      
 		
 		driver.findElement(By.xpath("//div[h5='Elements']//h5//..//..")).click();
@@ -30,9 +28,10 @@ public class TextboxExample {
 		driver.findElement(By.xpath("//textarea[@id='currentAddress']")).sendKeys("TestCurrentAddress");
 		driver.findElement(By.xpath("//textarea[@id='permanentAddress']")).sendKeys("TesttPermanentAddress");
 		
-//		a.moveToElement(driver.findElement(By.xpath("//button[@id='submit']"))).click();
+		driver.findElement(By.xpath("//button[@id='submit']")).click();
 		
-		Thread.sleep(7000); 
+		
+		Thread.sleep(2000); 
 		
 	driver.quit();
 

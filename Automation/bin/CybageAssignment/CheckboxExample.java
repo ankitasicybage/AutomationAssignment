@@ -44,7 +44,7 @@ public class CheckboxExample {
 	    
 	    driver.findElement(By.xpath("//button[@title='Toggle']")).click();
 	    
-	    Thread.sleep(3000);  
+	    Thread.sleep(3000);  // wait is added just to see what is being clicked
 		
     	driver.quit();
 
